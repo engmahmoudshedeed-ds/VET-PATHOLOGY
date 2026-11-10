@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An educational Veterinary Pathology project exploring muscle and ligament diseases, gross lesions, histopathology, diagnosis and prevention." />
+  <meta name="theme-color" content="#142b45" />
+  <title>Muscle & Ligament | Veterinary Pathology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="diseases.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Muscle and Ligament home">
+      <span class="brand-mark">🐾</span><span><b>Veterinary Pathology</b><small>EDUCATIONAL PROJECT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#anatomy">🦴 Anatomy & Functions</a>
+      <a class="nav-link" href="#diseases">🧬 Diseases</a>
+      <a class="nav-link" href="#gallery">▧ Images Gallery</a>
+      <a class="nav-link" href="#references">▤ References</a>
+    </nav>
+    <a class="header-cta" href="#diseases">Explore Project <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> VETERINARY PATHOLOGY PROJECT</div>
+        <h1><em>Muscle</em> and <span>Ligament</span></h1>
+        <p class="hero-project-title">Veterinary Pathology Project</p>
+        <p class="hero-subtitle">Understanding the diseases... for healthier animals</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#diseases">Explore the Project <span>→</span></a></div>
+        <div class="hero-stats"><div><b>17</b><small>DISEASE TOPICS</small></div><i></i><div><b>03</b><small>MAJOR CATEGORIES</small></div><i></i><div><b>08</b><small>PATHOLOGY HEADINGS</small></div></div>
+      </div>
+      <div class="hero-visual"><img src="assets/images/hero-veterinary-anatomy.png" alt="Three-dimensional educational illustration of bovine muscular and ligament anatomy"><div class="image-note"><span class="note-icon">✧</span><span><b>ANATOMY IN FOCUS</b><small>3D-style educational illustration</small></span></div></div>
+      <div class="hero-bottom-line"><span>ANATOMY</span><span>PATHOGENESIS</span><span>GROSS PATHOLOGY</span><span>HISTOPATHOLOGY</span></div>
+    </section>
+
+    <section class="specialty-cards" aria-label="Disease categories">
+      <button class="specialty-card infectious-specialty" type="button" data-specialty-filter="infectious"><span class="specialty-icon">🦠</span><span class="specialty-copy"><b>Infectious Diseases</b><small>Bacterial, viral and zoonotic infections</small><em>4 topics · Explore diseases →</em></span><span class="specialty-art">✚</span></button>
+      <button class="specialty-card immune-specialty" type="button" data-specialty-filter="immune"><span class="specialty-icon">🛡️</span><span class="specialty-copy"><b>Inflammatory &amp; Autoimmune Diseases</b><small>Immune-mediated and inflammatory disorders</small><em>6 topics · Explore diseases →</em></span><span class="specialty-art">✧</span></button>
+      <button class="specialty-card parasitic-specialty" type="button" data-specialty-filter="parasitic"><span class="specialty-icon">🪱</span><span class="specialty-copy"><b>Parasitic Diseases</b><small>Parasites affecting muscles and ligaments</small><em>7 topics · Explore diseases →</em></span><span class="specialty-art">◎</span></button>
+    </section>
+
+    <section class="intro-strip" id="introduction">
+      <div class="section-kicker">01 / INTRODUCTION</div>
+      <div class="intro-grid">
+        <div><h2>Movement is a <span>biological masterpiece.</span></h2><p>Muscles generate force; tendons transmit that force to bone; and ligaments stabilize joints by connecting bone to bone. Together, these tissues support locomotion, posture and mechanical integrity in animals.</p><a class="inline-link" href="#anatomy">Explore anatomy & functions <b>→</b></a></div>
+        <div class="intro-highlight"><div class="highlight-icon">⌁</div><div><b>Why Veterinary Pathology?</b><p>Pathology connects clinical signs with tissue-level injury. Gross examination and histopathology help identify the pattern, severity and cause of musculoskeletal disease.</p></div></div>
+      </div>
+    </section>
+
+    <section class="anatomy-section section-pad" id="anatomy">
+      <div class="section-heading"><div><div class="section-kicker">02 / ANATOMY & FUNCTIONS</div><h2>Know the tissue.<br><span>Understand the disease.</span></h2></div><p>Two connective and contractile systems work together to produce controlled movement and maintain joint stability.</p></div>
+      <div class="anatomy-cards">
+        <article class="anatomy-card muscle-card"><div class="anatomy-symbol">〰</div><div class="anatomy-card-content"><span class="mini-label">CONTRACTILE TISSUE</span><h3>Skeletal Muscle</h3><p>Bundles of long, multinucleated muscle fibers arranged in fascicles. Actin–myosin interaction generates contraction and movement.</p><ul><li>Produces movement and posture</li><li>Generates heat</li><li>Supports metabolic homeostasis</li></ul></div><div class="anatomy-art muscle-art" aria-hidden="true"><span></span><span></span><span></span><i></i></div></article>
+        <article class="anatomy-card ligament-card"><div class="anatomy-symbol">⌁</div><div class="anatomy-card-content"><span class="mini-label">DENSE CONNECTIVE TISSUE</span><h3>Ligaments</h3><p>Collagen-rich bands connecting bone to bone. Their organized fibers resist excessive joint movement and guide stability.</p><ul><li>Stabilize joints</li><li>Limit abnormal motion</li><li>Provide proprioceptive feedback</li></ul></div><div class="ligament-art" aria-hidden="true"><div class="bone bone-a"></div><div class="bone bone-b"></div><div class="ligament-fibers"></div></div></article>
+      </div>
+      <div class="pathway-note"><span>✦</span><p><b>Pathology connection:</b> Injury may involve myofibers, fascia, tendon, enthesis (the tendon/ligament-to-bone attachment), synovial structures or the joint itself. Accurate sampling and anatomical localization are essential.</p></div>
+    </section>
+
+    <section class="disease-section section-pad" id="diseases">
+      <div class="section-heading"><div><div class="section-kicker">03 / DISEASE LIBRARY</div><h2>Explore the <span>conditions.</span></h2></div><p>Browse all 17 assigned topics. Open any disease to review its definition, pathogenesis, lesions, clinical signs and diagnostic approach.</p></div>
+      <div class="category-tabs" role="tablist" aria-label="Filter disease categories">
+        <button class="category-tab active" data-filter="all">All topics <b>17</b></button>
+        <button class="category-tab infectious" data-filter="infectious"><span class="tab-dot"></span> Infectious <b>4</b></button>
+        <button class="category-tab immune" data-filter="immune"><span class="tab-dot"></span> Inflammatory & Autoimmune <b>6</b></button>
+        <button class="category-tab parasitic" data-filter="parasitic"><span class="tab-dot"></span> Parasitic <b>7</b></button>
+      </div>
+      <div class="disease-toolbar"><div class="results-count" id="resultsCount">Showing 17 diseases</div><label class="search-box"><span>⌕</span><input id="diseaseSearch" type="search" placeholder="Search disease, agent or tissue..." aria-label="Search diseases"></label></div>
+      <div class="disease-grid" id="diseaseGrid"></div>
+      <div class="no-results" id="noResults" hidden>No matching topics. Try another search term.</div>
+    </section>
+
+    <section class="pathology-focus section-pad" id="pathology-focus">
+      <div class="focus-heading"><div class="section-kicker">04 / THE PATHOLOGY LENS</div><h2>Look closer.<br><span>Lesions tell the story.</span></h2><p>Gross pathology and histopathology are central to this project. The two views complement each other: one reveals distribution and pattern, the other reveals cellular detail.</p></div>
+      <div class="focus-panels">
+        <article class="focus-panel gross-panel"><div class="focus-panel-top"><span class="focus-icon">◉</span><span>MACROSCOPIC EXAMINATION</span></div><h3>Gross Lesions</h3><p>Assess color, size, shape, consistency, distribution, exudate, hemorrhage, necrosis, mineralization and tissue architecture.</p><div class="gross-visual"><div class="gross-shape"></div><span>EXTERNAL / CUT SURFACE</span></div><div class="focus-caption">Record the location, extent and character of every visible lesion.</div></article>
+        <article class="focus-panel histo-panel"><div class="focus-panel-top"><span class="focus-icon">⌕</span><span>MICROSCOPIC EXAMINATION</span></div><h3>Histopathological Lesions</h3><p>Evaluate myofiber degeneration or necrosis, inflammatory-cell type, vascular changes, fibrosis, parasites and tissue repair.</p><div class="histo-visual"><div class="histo-cells"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>H&E-STYLE MICROSCOPIC PATTERN</span></div><div class="focus-caption">Describe the tissue, stain, magnification and diagnostic feature.</div></article>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="section-heading"><div><div class="section-kicker">05 / GROSS & HISTOPATHOLOGICAL IMAGES</div><h2>Evidence through <span>the microscope.</span></h2></div><p>Locally stored educational visual plates. Illustrative diagrams are clearly distinguished from authentic specimen photographs and published micrographs.</p></div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="gallery-card" type="button" data-image="assets/images/pathology/cysticercosis-gross.svg" data-title="Cysticercosis — Gross appearance" data-caption="Educational schematic of a cysticercus-like lesion in skeletal muscle. This is an illustration, not a specimen photograph."><img src="assets/images/pathology/cysticercosis-gross.svg" alt="Schematic illustration of a cysticercus-like lesion in muscle" loading="lazy"><span class="gallery-type parasitic-type">GROSS • SCHEMATIC</span><b>Cysticercosis in skeletal muscle</b><small>Illustrative representation of a cystic lesion.</small><em>Visual type: educational schematic</em></button>
+        <button class="gallery-card" type="button" data-image="assets/images/pathology/myositis-histology.svg" data-title="Myositis — Histology schematic" data-caption="Illustrative H&E-inspired tissue pattern for teaching. It is not a real stained histopathology slide and has no diagnostic magnification."><img src="assets/images/pathology/myositis-histology.svg" alt="H&E-inspired schematic of inflammatory changes in muscle" loading="lazy"><span class="gallery-type histo-type">HISTOLOGY • SCHEMATIC</span><b>Inflammatory myopathy pattern</b><small>Conceptual representation of inflammatory cells and muscle fibers.</small><em>Visual type: H&E-inspired illustration</em></button>
+        <button class="gallery-card" type="button" data-image="assets/images/pathology/sarcocystis-muscle.svg" data-title="Sarcocystis — Muscle schematic" data-caption="Educational schematic showing an intramuscular sarcocyst. Not a photomicrograph."><img src="assets/images/pathology/sarcocystis-muscle.svg" alt="Schematic illustration of Sarcocystis within muscle tissue" loading="lazy"><span class="gallery-type parasitic-type">PARASITIC • SCHEMATIC</span><b>Sarcocystis in muscle</b><small>Conceptual view of an intramuscular sarcocyst.</small><em>Visual type: educational schematic</em></button>
+        <button class="gallery-card" type="button" data-image="assets/images/pathology/trichinella-muscle.svg" data-title="Trichinella spiralis — Muscle schematic" data-caption="Educational schematic of an encysted Trichinella larva in skeletal muscle. Not a real histology image."><img src="assets/images/pathology/trichinella-muscle.svg" alt="Schematic illustration of an encysted Trichinella larva in skeletal muscle" loading="lazy"><span class="gallery-type histo-type">PARASITIC • SCHEMATIC</span><b>Trichinella spiralis in muscle</b><small>Conceptual view of an encysted larva.</small><em>Visual type: educational schematic</em></button>
+      </div>
+      <p class="image-disclaimer">Academic image note: all current gallery visuals are locally stored educational illustrations, not authentic gross specimen photographs or H&amp;E micrographs. They must not be cited as diagnostic evidence. Authentic, permission-cleared pathology images should be added before final academic submission.</p>
+    </section>
+
+    <section class="references-section section-pad" id="references">
+      <div class="section-heading"><div><div class="section-kicker">06 / SCIENTIFIC REFERENCES</div><h2>Built on <span>reliable sources.</span></h2></div><p>Selected scientific literature and specialist veterinary references. Source details are displayed within this website; no external navigation is required.</p></div>
+      <div class="reference-list">
+        <details class="reference-item"><summary><span class="ref-number">01</span><span><b>Merck Veterinary Manual</b><small>Professional veterinary reference — musculoskeletal disorders, infectious diseases and parasitology.</small></span><span class="ref-arrow">＋</span></summary><p>Merck Veterinary Manual. Professional edition. Topic-specific entries should be cited by article title and access date in the final bibliography.</p></details>
+        <details class="reference-item"><summary><span class="ref-number">02</span><span><b>Pathologic Basis of Veterinary Disease</b><small>Veterinary muscle pathology, gross lesions, histopathology and species-specific disorders.</small></span><span class="ref-arrow">＋</span></summary><p>Zachary, J. F. (Ed.). Pathologic Basis of Veterinary Disease. Elsevier. Consult the skeletal muscle and musculoskeletal system chapters for foundational pathology.</p></details>
+        <details class="reference-item"><summary><span class="ref-number">03</span><span><b>Cysticercus bovis in slaughtered cattle in Upper Egypt (2025)</b><small>Peer-reviewed research with gross and histopathological observations in cattle.</small></span><span class="ref-arrow">＋</span></summary><p>BMC Veterinary Research (2025). Article identifier: 10.1186/s12917-025-04768-y. Use the article title, author list and figure legends in the formal bibliography.</p></details>
+        <details class="reference-item"><summary><span class="ref-number">04</span><span><b>Western College of Veterinary Medicine — Sarcocystis species</b><small>Veterinary parasitology resource — life cycle, epidemiology and pathology.</small></span><span class="ref-arrow">＋</span></summary><p>University of Saskatchewan, Western College of Veterinary Medicine. Learn About Parasites: Sarcocystis species. Educational veterinary parasitology resource.</p></details>
+        <details class="reference-item"><summary><span class="ref-number">05</span><span><b>Inflammatory Myopathies: Dermatomyositis, Polymyositis and IBM</b><small>Comparative histopathological patterns; primarily human clinical literature.</small></span><span class="ref-arrow">＋</span></summary><p>NCBI Bookshelf. Inflammatory myopathy reference chapter. Human disease descriptions must be explicitly identified as comparative background rather than assumed to represent common veterinary entities.</p></details>
+        <details class="reference-item"><summary><span class="ref-number">06</span><span><b>Neuromuscular Neosporosis in Dogs</b><small>Veterinary case-based literature on muscle pathology and diagnostic methods.</small></span><span class="ref-arrow">＋</span></summary><p>Journal of Veterinary Internal Medicine. DOI: 10.1111/jvim.17145. Relevant to canine neuromuscular neosporosis, including tissue-based diagnostic approaches.</p></details>
+      </div>
+      <div class="reference-footnote"><b>Academic accuracy note</b><p>Rheumatoid arthritis, systemic lupus erythematosus/Jaccoud arthropathy and inclusion body myositis are primarily established human disease entities. Veterinary relevance is species-dependent. Present comparative human pathology separately from documented animal diseases and cite species-specific evidence wherever available.</p></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">🐾</span><span><b>VETERINARY PATHOLOGY</b><small>MUSCLE & LIGAMENT</small></span></div><p>Veterinary Pathology Project <span>•</span> Discover. Learn. Understand.</p><a href="#top">Back to top ↑</a></footer>
+
+  <div class="modal-backdrop" id="diseaseModal" aria-hidden="true">
+    <section class="disease-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close disease details">×</button>
+      <div class="modal-topline"><span id="modalCategory" class="modal-category">INFECTIOUS DISEASE</span><span id="modalNumber" class="modal-number">01 / 17</span></div>
+      <h2 id="modalTitle">Disease title</h2><p id="modalSubtitle" class="modal-subtitle"></p>
+      <div class="modal-layout"><nav class="modal-index" id="modalIndex" aria-label="Disease sections"></nav><div class="modal-content" id="modalContent"></div></div>
+      <div class="modal-footer"><span>VETPATH • MUSCLE & LIGAMENT</span><button class="btn btn-outline" id="modalDone">Close topic</button></div>
+    </section>
+  </div>
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-panel"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button><img id="lightboxImage" src="" alt=""><div class="lightbox-caption"><b id="lightboxTitle"></b><p id="lightboxText"></p></div></div>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true"><div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""><h3 id="lightboxTitle"></h3><p id="lightboxText"></p></div></div>
+
+</body>
+</html>
